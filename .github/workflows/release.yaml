@@ -1,0 +1,35 @@
+name: "release"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Typst
+        run: sudo snap install typst
+      - name: Generate Asset
+        run: typst compile main.typ main.pdf --font-path font --root .
+      - name: Create Release
+        id: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-release.outputs.upload_url }}
+          asset_path: main.pdf
+          asset_name: curriculum-vitae.pdf
+          asset_content_type: application/pdf
