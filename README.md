@@ -13,5 +13,3 @@ To generate a PDF version named `main.pdf` of this _curriculum vitae_, you shoul
 ```sh
 typst compile main.typ main.pdf --font-path font --root .
 ```
-
-![Sample of the resulting PDF](./sample.png)
