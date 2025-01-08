@@ -1,4 +1,4 @@
-# HSK Worksheet Generator
+# Curriculum Vitae
 
 My _curriculum vitae_ Typst source code.
 
