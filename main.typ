@@ -42,7 +42,7 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 
 == Skills
 
-#skills(("ArcGIS Enterprise", "ArcGIS Pro", "ArcGIS Online", "Oracle", "PL/SQL", "SQL Server", "T-SQL", "Postgres", "PostGIS", "FME", "QGIS", "GeoServer", "Python", "C#", "Java", "Typescript", "Javascript"))
+#skills(("ArcGIS Enterprise", "ArcGIS Pro", "ArcGIS Utility Network", "Oracle", "PL/SQL", "SQL Server", "T-SQL", "Postgres", "PostGIS", "FME", "QGIS", "GeoServer", "Python", "C#", "Java", "Typescript", "Javascript"))
 
 == Work Experience
 
@@ -52,14 +52,15 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 )[
   _GIS Consultant_
 
-  - Planned Oracle-based Enterprise Geodatabases deployments for mission-critical utility solutions.
-  - Developed ArcGIS Pro add-ins, allowing the final user to perform complex geospatial analysis on demand.
-  - Designed ArcGIS Experience Builder applications delivering easy-to-use data visualization and analysis features.
-  - Worked on integrations between GE's Smallworld and Schneider's EcoStruxure, delivering real-time business and spatial data reliably.
+  - Deployed an ArcGIS Utility Network for Brazil's largest water/sewer utility, empowering their asset management workflows.
+  - Designed Oracle-based Enterprise Geodatabases deployments for mission-critical utility solutions.
+  - Developed ArcGIS Pro add-ins and ArcGIS Experience Builder applications, delivering easy-to-use data visualization and analysis features.
+  - Worked on integrations between GE's Smallworld and Schneider's EcoStruxure, providing real-time asset data for their operations.
 
   *Projects:*
-  - Sabesp - SIGNOS
-  - Cemig Distribuição - Implantação do EcoStruxure ADMS
+  - Sabesp - ArcGIS Utility Network Deployment (Novo Signos)
+  - Sabesp - ArcGIS Enterprise Application Management Services (Signos)
+  - Cemig Distribuição - EcoStruxure ADMS x GE Smallworld Integration
 ]
 
 #item(
