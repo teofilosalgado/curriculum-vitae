@@ -113,11 +113,20 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 
 #item(
   "Universidade Federal de Lavras",
+  "2025 - Current",
+  left-column-width: 1fr,
+  right-column-width: 1fr
+)[
+  Master of Science in Data Engineering
+]
+
+#item(
+  "Universidade Federal de Lavras",
   "2018 - 2024",
   left-column-width: 1fr,
   right-column-width: 1fr
 )[
-  Bachelor’s degree in Computer Science
+  Bachelor of Science in Computer Science
 ]
 
 #item(
@@ -171,6 +180,7 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 
 #bibliography("publications.bib", title: none, full: true, style: "american-psychological-association")
 
+/*
 == Volunteering
 
 #item(
@@ -179,3 +189,4 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 )[
   While associated with the non-profit organization Comp Júnior, part of the Movimento Empresa Júnior, I developed applications to help the organization of academic events at my university. Noteworthy mention to UFLA de Portas Abertas, an application successfully deployed to manage and guide around 40.000 visitors during campus tours.
 ]
+*/
