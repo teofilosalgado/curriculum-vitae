@@ -42,7 +42,7 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 
 == Skills
 
-#skills(("ArcGIS Enterprise", "ArcGIS Pro", "ArcGIS Utility Network", "Oracle", "PL/SQL", "SQL Server", "T-SQL", "Postgres", "PostGIS", "FME", "QGIS", "GeoServer", "Python", "C#", "Java", "Typescript", "Javascript"))
+#skills(("ArcGIS Enterprise", "ArcGIS Pro", "ArcGIS Utility Network", "FME", "Oracle", "PL/SQL", "SQL Server", "T-SQL", "Postgres", "PostGIS", "QGIS", "GeoServer", "Python", "C#", "Java", "Typescript", "Javascript"))
 
 == Work Experience
 
@@ -52,15 +52,15 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 )[
   _GIS Consultant_
 
-  - Deployed an ArcGIS Utility Network for Brazil's largest water/sewer utility, empowering their asset management workflows.
-  - Designed Oracle-based Enterprise Geodatabases deployments for mission-critical utility solutions.
+  - Designed and deployed an ArcGIS Utility Network for Brazil's largest water/sewer utility, empowering their asset management workflows.
+  - Modeled Oracle-based Enterprise Geodatabases for mission-critical utility solutions.
   - Developed ArcGIS Pro add-ins and ArcGIS Experience Builder applications, delivering easy-to-use data visualization and analysis features.
   - Worked on integrations between GE's Smallworld and Schneider's EcoStruxure, providing real-time asset data for their operations.
 
   *Projects:*
   - Sabesp - ArcGIS Utility Network Deployment (Novo Signos)
   - Sabesp - ArcGIS Enterprise Application Management Services (Signos)
-  - Cemig Distribuição - EcoStruxure ADMS x GE Smallworld Integration
+  - Cemig - EcoStruxure ADMS x GE Smallworld Integration
 ]
 
 #item(
@@ -74,7 +74,7 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
   - Developed observability solutions based on the Elastic stack allowing for end-to-end monitoring and logs collection.
 
   *Projects:*
-  - ANEEL - Processamento SIG-R
+  - ANEEL - Processamento SIG-R BDGD
   - Sanepar - Gestão de Serviços
   - COPEL - Nav
   - CPFL Energia - Otimizador de Rotas
