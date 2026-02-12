@@ -38,7 +38,7 @@
   "+55 35 9 9872-4100"
 )
 
-Computer Science graduate at UFLA with a technician degree in Mechatronics from CEFET-MG. I am a GIS developer with experience designing geoprocessing services, geodatabases, data pipelines, and highly available applications. Currently, I am working on solutions for utility companies based on the ArcGIS platform.
+Bridging the gap between Computer Science and Geospatial Intelligence, I am a Senior GIS Solutions Architect with over 8 years of experience designing high-performance systems for the Utility sector. Currently pursuing an M.S. in GIS, I specialize in solving complex data challenges where traditional GIS workflows hit their limits.
 
 == Skills
 
@@ -180,7 +180,6 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 
 #bibliography("publications.bib", title: none, full: true, style: "american-psychological-association")
 
-/*
 == Volunteering
 
 #item(
@@ -189,4 +188,3 @@ Computer Science graduate at UFLA with a technician degree in Mechatronics from 
 )[
   While associated with the non-profit organization Comp Júnior, part of the Movimento Empresa Júnior, I developed applications to help the organization of academic events at my university. Noteworthy mention to UFLA de Portas Abertas, an application successfully deployed to manage and guide around 40.000 visitors during campus tours.
 ]
-*/
