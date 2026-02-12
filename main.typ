@@ -180,6 +180,7 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 
 #bibliography("publications.bib", title: none, full: true, style: "american-psychological-association")
 
+/*
 == Volunteering
 
 #item(
@@ -188,3 +189,4 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 )[
   While associated with the non-profit organization Comp Júnior, part of the Movimento Empresa Júnior, I developed applications to help the organization of academic events at my university. Noteworthy mention to UFLA de Portas Abertas, an application successfully deployed to manage and guide around 40.000 visitors during campus tours.
 ]
+*/
