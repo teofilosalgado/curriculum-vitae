@@ -1,6 +1,7 @@
 name: "release"
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "v*"
@@ -32,4 +33,5 @@ jobs:
           upload_url: ${{ steps.create-release.outputs.upload_url }}
           asset_path: main.pdf
           asset_name: curriculum-vitae.pdf
+
           asset_content_type: application/pdf
