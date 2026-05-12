@@ -47,25 +47,25 @@
   ]
 }
 
-#let item(title, subtitle, heading, content, left-column-width: 3fr, right-column-width: 9fr) = {
-  pad(bottom: 5mm)[
+#let item(title, subtitle, heading, content) = {
+  pad(bottom: 0mm)[
     #grid(
       columns: (1fr, 1fr),
       rows: 2,
       gutter: 0pt,
       grid.cell()[
-        #text(font: "Inter 18pt", weight: "bold", size: 10pt, hyphenate: false, title) \
-        #text(font: "Inter 18pt", style: "italic", size: 12pt, hyphenate: false, subtitle)
+        #text(font: "Inter 18pt", size: 12pt, weight: "bold", hyphenate: false, title) \
+        #text(font: "Inter 18pt", style: "italic", hyphenate: false, subtitle)
       ],
       grid.cell()[
         #align(right)[
           #par(justify: false)[
-            #text(fill: rgb("#797794"), size: 10pt, heading)
+            #text(fill: rgb("#797794"), heading)
           ]
         ]
       ],
     )
-    #box(content)
+    #content
   ]
 }
 
