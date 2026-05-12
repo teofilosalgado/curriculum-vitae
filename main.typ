@@ -1,4 +1,4 @@
-#import "components.typ": header, item, skills
+#import "components.typ": header, item, skills, languages, language
 
 #set page(
   paper: "a4",
@@ -6,16 +6,16 @@
 )
 
 #set par(
-  justify: true
+  justify: true,
 )
 
 #set text(
-  font: "Inter",
-  hyphenate: false
+  font: "Inter 18pt",
+  hyphenate: false,
 )
 
 #show heading: c => {
-  pad(left: -1.5cm, top: 0.5cm, bottom: 0.25cm)[
+  pad(left: -1.5cm, top: 0.15cm, bottom: 0.25cm)[
     #grid(
       columns: (2cm, 1fr),
       rows: 1,
@@ -30,28 +30,45 @@
 }
 
 #header(
-  "João Victor", 
-  "Teófilo Salgado", 
-  "GIS Developer", 
+  "João Victor",
+  "Teófilo Salgado",
+  "GIS Solutions Architect",
   "teofilosalgado.github.io",
   "jvictorteo2000@hotmail.com",
-  "+55 35 9 9872-4100"
+  "+55 35 9 9872-4100",
 )
 
 Bridging the gap between Computer Science and Geospatial Intelligence, I am a Senior GIS Solutions Architect with over 8 years of experience designing high-performance systems for the Utility sector. Currently pursuing an M.S. in GIS, I specialize in solving complex data challenges where traditional GIS workflows hit their limits.
 
 == Skills
 
-#skills(("ArcGIS Enterprise", "ArcGIS Pro", "ArcGIS Utility Network", "FME", "Oracle", "PL/SQL", "SQL Server", "T-SQL", "Postgres", "PostGIS", "QGIS", "GeoServer", "Python", "C#", "Java", "Typescript", "Javascript"))
+#skills((
+  "ArcGIS Enterprise",
+  "ArcGIS Pro",
+  "ArcGIS Utility Network",
+  "FME",
+  "Oracle",
+  "PL/SQL",
+  "SQL Server",
+  "T-SQL",
+  "Postgres",
+  "PostGIS",
+  "QGIS",
+  "GeoServer",
+  "Python",
+  "C#",
+  "Java",
+  "Typescript",
+  "Javascript",
+))
 
 == Work Experience
 
 #item(
   "Atos",
-  "Nov 2022 - Current"
+  "GIS Consultant",
+  "Nov 2022 - Current",
 )[
-  _GIS Consultant_
-
   - Designed and deployed an ArcGIS Utility Network for Brazil's largest water/sewer utility, empowering their asset management workflows.
   - Modeled Oracle-based Enterprise Geodatabases for mission-critical utility solutions.
   - Developed ArcGIS Pro add-ins and ArcGIS Experience Builder applications, delivering easy-to-use data visualization and analysis features.
@@ -65,10 +82,9 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 
 #item(
   "Imagem Geosistemas",
-  "Jul 2021 - Nov 2022"
+  "Solution Analyst",
+  "Jul 2021 - Nov 2022",
 )[
-  _Solution Analyst_
-
   - Implemented ArcGIS Geoprocessing Services for Network Dataset generation, providing reliable routing data for the final user.
   - Optimized SQLServer-based Enterprise Geodatabases improving performance on large-scale geospatial operations.
   - Developed observability solutions based on the Elastic stack allowing for end-to-end monitoring and logs collection.
@@ -82,10 +98,9 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 
 #item(
   "KPMG",
-  "Nov 2020 - Jun 2021"
+  "SAP Consultant",
+  "Nov 2020 - Jun 2021",
 )[
-  _SAP Consultant_
-
   - Worked on integrations between SAP and ArcGIS Enterprise deployments for the agricultural industry.
   - Developed custom UI5 applications exposing ArcGIS Enterprise functionalities.
 
@@ -95,10 +110,9 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 
 #item(
   "GT4W",
-  "May 2019 - March 2021"
+  "Software developer",
+  "May 2019 - March 2021",
 )[
-  _Software developer_
-
   - Developed mission-critical, offline-first mobile and web applications for private and public institutions.
   - Streamlined the processing of large databases of land parcel data designing ArcGIS Geoprocessing Services.
   - Optimized PostGIS-based geodatabases reducing load times and overall resource usage.
@@ -113,68 +127,30 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 
 #item(
   "Universidade Federal de Lavras",
-  "2025 - Current",
-  left-column-width: 1fr,
-  right-column-width: 1fr
-)[
-  Master of Science in Data Engineering
-]
+  "Master of Science in Spatial Data Engineering",
+  "2025 - Current"
+)[]
 
 #item(
   "Universidade Federal de Lavras",
-  "2018 - 2024",
-  left-column-width: 1fr,
-  right-column-width: 1fr
-)[
-  Bachelor of Science in Computer Science
-]
+  "Bachelor of Science in Computer Science",
+  "2018 - 2024"
+)[]
 
 #item(
-  "Centro Federal de Educação Tecnológica", 
-  "2015 - 2017",
-  left-column-width: 1fr,
-  right-column-width: 1fr
-)[
-  Technician degree in Mechatronics
-]
+  "Centro Federal de Educação Tecnológica",
+  "Technician degree in Mechatronics",
+  "2015 - 2017"
+)[]
 
 == Languages
 
-#pad(bottom: 0.5cm)[
-  #grid(
-    columns: (1fr, 1fr, 1fr),
-    rows: 1,
-    gutter: 0pt,
-    inset: 0pt,
-    grid.cell()[
-      #grid(
-        columns: (1fr, 1fr),
-        rows: 1,
-        gutter: 4pt,
-        grid.cell()[#align(right)[*Portuguese:*]],
-        grid.cell()[Native]
-      )
-    ],
-    grid.cell()[
-      #grid(
-        columns: (1fr, 1fr),
-        rows: 1,
-        gutter: 4pt,
-        grid.cell()[#align(right)[*English:*]],
-        grid.cell()[Fluent]
-      )
-    ],
-    grid.cell()[
-      #grid(
-        columns: (1fr, 1fr),
-        rows: 1,
-        gutter: 4pt,
-        grid.cell()[#align(right)[*Mandarin:*]],
-        grid.cell()[Basic]
-      )
-    ],
-  )
-]
+#languages(
+  language("Português", "Nativo"),
+  language("Inglês", "Fluente"),
+  language("Espanhol", "Intermediário"),
+  language("Mandarim", "Básico"),
+)
 
 == Publications
 
@@ -184,7 +160,7 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 == Volunteering
 
 #item(
-  "Comp Júnior", 
+  "Comp Júnior",
   "2018 - 2020"
 )[
   While associated with the non-profit organization Comp Júnior, part of the Movimento Empresa Júnior, I developed applications to help the organization of academic events at my university. Noteworthy mention to UFLA de Portas Abertas, an application successfully deployed to manage and guide around 40.000 visitors during campus tours.
