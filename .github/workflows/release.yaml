@@ -1,36 +1,26 @@
-name: "release"
+name: "Release"
 
 on:
   push:
     tags:
       - "v*"
 
+permissions:
+  contents: write
+
 jobs:
   release:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Install Typst
-        run: sudo snap install typst
-      - name: Generate Asset
-        run: typst compile main.typ main.pdf --font-path font --root .
-      - name: Create Release
-        id: create-release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v3
+      - name: Generate assets
+        run: mkdir -p output; for f in src/main.*.typ; do typst compile "$f" "output/curriculum-vitae.$(basename "$f" | cut -d. -f2).pdf" --font-path font --root .; done
+      - name: Publish assets
+        uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create-release.outputs.upload_url }}
-          asset_path: main.pdf
-          asset_name: curriculum-vitae.pdf
-
-          asset_content_type: application/pdf
+          files: output/*.pdf
+          generate_release_notes: false

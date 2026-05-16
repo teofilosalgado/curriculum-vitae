@@ -1,4 +1,4 @@
-#import "components.typ": header, item, skills, languages, language
+#import "component.typ": header, item, skills, languages, language
 
 #set page(
   paper: "a4",
@@ -154,7 +154,7 @@ Bridging the gap between Computer Science and Geospatial Intelligence, I am a Se
 
 == Publications
 
-#bibliography("publications.bib", title: none, full: true, style: "american-psychological-association")
+#bibliography("publication.bib", title: none, full: true, style: "ieee")
 
 /*
 == Volunteering

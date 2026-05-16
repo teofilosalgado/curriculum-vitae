@@ -1,5 +1,6 @@
 {
-    "tinymist.exportPdf": "onSave",
-    "tinymist.outputPath": "$root/target/$dir/$name",
-    "cSpell.language": "pt-BR, en-US"
+    "cSpell.language": "pt-BR, en-US",
+    "cSpell.words": [
+        "american"
+    ],
 }

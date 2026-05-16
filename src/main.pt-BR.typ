@@ -1,4 +1,4 @@
-#import "components.typ": header, item, skills, languages, language
+#import "component.typ": header, item, skills, languages, language
 
 #set page(
   paper: "a4",
@@ -125,15 +125,4 @@ Arquiteto de Soluções GIS Sênior com mais de 8 anos de experiência na concep
 
 == Publicações
 
-#bibliography("publications.bib", title: none, full: true, style: "american-psychological-association")
-
-/*
-== Volunteering
-
-#item(
-  "Comp Júnior",
-  "2018 - 2020"
-)[
-  While associated with the non-profit organization Comp Júnior, part of the Movimento Empresa Júnior, I developed applications to help the organization of academic events at my university. Noteworthy mention to UFLA de Portas Abertas, an application successfully deployed to manage and guide around 40.000 visitors during campus tours.
-]
-*/
+#bibliography("publication.bib", title: none, full: true, style: "ieee")
